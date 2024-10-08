@@ -1,0 +1,244 @@
+
+.titulo-pagina{ 
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 6% !important;
+  left: 12%;
+  font-size: 4.5rem;
+  font-family: 'Candal';
+  color: #27366e;
+}
+
+
+/*----------------------------------------Barra de busqueda y Filtros-------------------------------------------------------------*/
+.searchBox{
+    position: fixed;
+    top: 10%;
+    left: 4%;
+    transform:  translate(-50%, 50%, 50%, -50%);
+    background: #27366e;
+    height: 60px;
+    border: 2px, solid, #e7b11f;
+    border-radius: 60px;
+    padding: 5px;
+    z-index: 1;
+  }
+  
+  .searchBox.active .searchInput {
+    width: 600px !important;
+    padding: 0 6px;
+  }
+  
+  .searchBox.active .searchButton {
+  background: white;
+  color : #e7b11f;
+  }
+  
+  .searchButton {
+    position: relative;
+    top: 3px;
+    left: -4px;
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border: 3px, solid, #e7b11f;
+    border-radius: 50%;
+    background: #e7b11f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+  }
+  
+  .searchInput {
+    position: relative;
+    top: 0px;
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+  
+  }
+  
+  @media screen and (max-width: 620px) {
+  .searchBox.active .searchInput {
+    width: 150px;
+    padding: 0 6px;
+  }
+  }
+  
+  /*--------------------------------------------------------------------------------------------------------------*/
+  
+  .filterBox {
+    position: fixed;
+    top: 20%;
+    left: 4%;
+    transform: translate(-50%, 50%, 50%, -50%);
+    background: #27366e;
+    height: 60px;
+    width: 60px !important;
+    border: 2px, solid, #e7b11f;
+    border-radius: 40px;
+    padding: 10px;
+    z-index: 1;
+    width: 0px; /* Agregamos un ancho inicial de 0px */
+    overflow: hidden; /* Agregamos overflow hidden para que el contenido no se desborde */
+    transition: 0.4s; /* Agregamos una transición para que el ancho se expanda suavemente */
+  }
+  
+  .filterBox.active {
+    width: 450px !important;
+    height: 300px !important;
+    padding: 10px;  
+  }
+  
+  .filterBox.active .filterButton {
+    position: relative;
+    left: -20px;
+    top: 0px;
+    background: white;
+    color: #e7b11f;
+    width: 400px !important;
+    border-radius: 20px;
+  }
+  
+  .searchSelect{
+    display: none;
+  }
+
+  .filterBox.active .searchSelect {
+    display: flex;
+    position: relative;
+    top: -50px;
+    width: 100%; /* Ancho del select cuando se hace hover */
+    padding: 0 6px; /* Padding para que el contenido tenga espacio */
+    background: white;
+    color: #27366e;
+    border: 1px, solid, #e7b11f;
+    border-radius: 20px;
+    margin: 5px;
+  }
+  
+  .filterBox .filterButton {
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #e7b11f;
+    border-radius: 50%;
+    background: #e7b11f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s;
+    z-index: 1;
+  }
+  
+  
+@media screen and (max-width: 620px) {
+    .filterBox.active {
+        width: 150px; /* Ancho máximo cuando se hace hover en pantalla pequeña */
+    overflow: visible; /* Mostramos los elementos del formulario */
+    }
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+
+.filterButton.disabled,
+.searchButton.disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+
+.paginate{ text-align: center; }
+
+.page-numbers{
+  display: flex;
+}
+
+.page-info{
+  position: relative;
+  text-align: center;
+  top: 35px;
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: #27366e;
+}
+
+.pagination{
+  margin: 40px;
+  font-family: 'Candal', sans-serif;
+  display: inline-flex;
+  position: relative;
+}
+.pagination a.page-link{
+  line-height: 41px;
+  height: 42px;
+  width: 42px;
+  padding: 0;
+  margin: 0 5px;
+  border: none;
+  border-radius: 50% !important;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  background-color: #27366e;
+  font-size: 18px;
+  font-weight: 10;
+  z-index: 1;
+  transition: all 0.3s ease 0s;
+}
+.pagination a.page-link:hover,
+.pagination a.page-link:focus,
+.pagination .active a.page-link:hover,
+.pagination .active a.page-link{
+  color: #27366e;
+  background: white;
+  box-shadow: 0 0 10px #e7b11f;
+}
+.pagination a.page-link:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  border: 5px solid #e7b11f;
+  border-top-color: white;
+  border-right-color: white;
+  border-radius: 50%;
+  opacity: 0;
+  transform: rotate(155deg);
+  transition: all 0.3s ease 0s;
+}
+.pagination a.page-link:hover:before,
+.pagination a.page-link:focus:before,
+.pagination .active a.page-link:before{
+  opacity: 1;
+  transform: rotate(-15deg);
+}
+@media only screen and (max-width: 480px){
+  .pagination{
+      font-size: 0;
+      border: none;
+      display: inline-block;
+  }
+  .pagination{
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 0 10px;
+  }
+}

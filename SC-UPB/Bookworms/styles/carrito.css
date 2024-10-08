@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.title-carrito{
+    font-family: 'Candal', sans-serif;
+    color: #27366eCC;
+    backdrop-filter: blur(2px);
+    text-shadow: 0px 6px 9px #27366e73;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.row_libros{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+.swal2-popup-custom {
+    backdrop-filter: blur(5px); /* Fondo borroso */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 15px #27366eCC; /* Sombra con el mismo color del fondo */
+}
+
+/* Estilo para el título */
+.swal2-title-custom {
+    font-family: "Candal", sans-serif;
+    font-size: 24px;
+    letter-spacing: 3px; /* Espaciado de letras */
+}
+
+.swal2-icon-custom{
+    backdrop-filter: blur(5px);
+}
+
+/* Estilo para el contenido del texto */
+.swal2-content-custom {
+    font-family: "Candal", sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px; /* Espaciado de letras */
+}
+
+/* Estilo para los botones */
+.swal2-button-custom {
+    font-family: "Open Sans", sans-serif;
+    border-radius: 10px; /* Bordes redondeados */
+    letter-spacing: 3px; /* Espaciado de letras */
+}
+
+/* Estilo específico para el botón de cancelar */
+.swal2-button-custom-cancel {
+    font-family: "Open Sans", sans-serif;
+    border-radius: 10px; /* Bordes redondeados */
+    letter-spacing: 3px; /* Espaciado de letras */
+}
+
+/* Efecto borroso para los botones */
+.swal2-button-blur {
+    backdrop-filter: blur(5px); /* Efecto borroso en los botones */
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+.swal2-popup-custom-2 {
+    backdrop-filter: blur(5px); /* Fondo borroso */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 15px #27366eCC; /* Sombra con el mismo color del fondo */
+}
+
+/* Estilo para el título */
+.swal2-title-custom-2 {
+    font-family: "Candal", sans-serif;
+    font-size: 24px;
+    letter-spacing: 3px; /* Espaciado de letras */
+}
+
+.swal2-icon-custom-2 {
+    background-color: #27366e;
+    backdrop-filter: blur(5px);
+}
+
+/* Estilo para el contenido del texto */
+.swal2-content-custom-2 {
+    font-family: none !important;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px; /* Espaciado de letras */
+}
+
+/* Estilo para los botones */
+.swal2-button-custom-2{
+    font-family: "Open Sans", sans-serif;
+    border-radius: 10px; /* Bordes redondeados */
+    letter-spacing: 3px; /* Espaciado de letras */
+}
+
+/* Efecto borroso para los botones */
+.swal2-button-blur-2 {
+    backdrop-filter: blur(5px); /* Efecto borroso en los botones */
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+
+.swal2-popup-custom-3 {
+    backdrop-filter: blur(5px); /* Fondo borroso */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 15px #27366eCC; /* Sombra con el mismo color del fondo */
+}
+
+/* Estilo para el título */
+.swal2-title-custom-3{
+    font-family: "Candal", sans-serif;
+    font-size: 24px;
+    letter-spacing: 3px; /* Espaciado de letras */
+}
+
+.swal2-icon-custom-3 {
+    background-color: #27366e;
+    backdrop-filter: blur(5px);
+}
+
+/* Estilo para el contenido del texto */
+.swal2-content-custom-3 {
+    font-family: none !important;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px; /* Espaciado de letras */
+}
+
+/* Estilo para los botones */
+.swal2-button-custom-3{
+    font-family: "Open Sans", sans-serif;
+    border-radius: 10px; /* Bordes redondeados */
+    letter-spacing: 3px; /* Espaciado de letras */
+}
+
+/* Efecto borroso para los botones */
+.swal2-button-blur-3 {
+    backdrop-filter: blur(5px); /* Efecto borroso en los botones */
+}

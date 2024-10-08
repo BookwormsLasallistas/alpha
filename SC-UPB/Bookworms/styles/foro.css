@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+.all{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-foro{
+    padding: 20px;
+    position: relative;
+    width: 90%;
+    height: auto;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cover{
+    margin: 20px;
+    width: 90%;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content{
+    margin: 20px;
+    position: relative;
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.coments{
+    margin: 20px;
+    position: relative;
+    width: 90%;
+    height: auto;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+.item{
+    position: relative;
+    height: auto;
+    width: 100%;
+    height: 200%;
+    box-shadow: 4px 4px #27366e33;
+    border-radius: 10px;
+    border: 1px solid #27366e;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    z-index: 20;
+    overflow: hidden;
+    margin: 10px 0 10px 0;
+    flex-direction: row;
+}
+
+.container-a{
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.item .container-a h1{
+    padding-left: 5%;
+    padding-top: 3%;
+    font-size: 40px;
+    font-family: 'Candal','Open Sans';
+    color: #27366e;
+}
+
+.item .container-a p{
+    padding-left: 5%;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: #27366e;
+    margin: 0;
+}
+
+.item .container-a #p2{
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 5%;
+    padding-top: 3.5%;
+
+}
+
+
+
+.container-b{
+    position: relative;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    margin-left: 230px;
+    display: flex;
+}
+
+.item .container-b .imagen-item{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    position: relative;
+    top: 0;
+    right: 0;
+    height: 170px;
+    width: 170px;
+    border-radius: 10px;
+    background-color: #e7b11f;
+    z-index: 15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    #imagen{
+        width: 90%;
+        height: 90%;
+        border-radius: 10px;
+    }
+}
+
+.decoration svg{
+    position: absolute;
+    left: -3px;
+    bottom: -2px;
+    z-index: 10; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+.container-for{
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    position: relative;
+    background-color: #27366eCC;
+    backdrop-filter: blur(10px);
+    word-wrap: break-word;
+    display: flex;
+}
+
+.container-for h1{
+    font-family: "Candal", sans-serif;
+    color: #fff;
+    display: flex;
+}
+
+.container-for p, .container-for li{
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    letter-spacing: 3.5px ;
+    font-size: medium;
+}
+
+/* Vector 1 */
+.dialog{
+    position: relative;
+    width: 104.7px;
+    height: 65.79px;
+    left: 99px;
+    top: 955.71px;
+    display: flex;
+    background: #27366E;
+    transform: rotate(-4.77deg);
+}
+
+.comment-secction{
+    background-image: url(../img/Vector\ decorativo-foro.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    top: -10px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.comment-secction p{
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 3.5px ;
+    font-size: medium;
+    margin: 20px;
+    color: #fff;
+}

@@ -1,0 +1,170 @@
+.text-admin{
+    color: #27366e;
+    font-family: "Candal", "Open Sans";
+}
+
+.tabla-header th, .tabla-body td{
+    color: #27366e;
+    font-family: "Open Sans", sans-serif;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+td.sinopsis{
+    cursor: pointer;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    line-clamp: 6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  td.sinopsis:active{
+    cursor: default;
+    display: block;
+  }
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+.container-form{
+    background-color: #fff;
+    border: 1px solid #27366e;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin: 20px;
+}
+
+.container-form input, .container-form textarea{
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    min-height: 10px;
+    outline: none;
+    background-color: #eee;
+}
+
+.container-form h1{
+    position: relative;
+    left: 0;
+    font-family: 'Candal', 'Open Sans';
+    font-size: 30px;
+    color: #27366e;
+}
+
+.container-form label, .container-form h6{
+    position: relative;
+    left: 0 !important;
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #27366e;
+}
+
+.container-form button{
+    background-color: #e7b11f;
+    font-family: 'Candal', 'Open Sans';
+    color: #27366e;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;  
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+/*----------------------------------------------------------------------------------------------------*/
+.swal2-popup-custom {
+    backdrop-filter: blur(5px); /* Fondo borroso */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 15px #27366eCC; /* Sombra con el mismo color del fondo */
+}
+
+/* Estilo para el título */
+.swal2-title-custom {
+    font-family: "Candal", sans-serif;
+    font-size: 24px;
+    letter-spacing: 3px; /* Espaciado de letras */
+}
+
+.swal2-icon-custom{
+    backdrop-filter: blur(5px);
+}
+
+/* Estilo para el contenido del texto */
+.swal2-content-custom {
+    font-family: "Candal", sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px; /* Espaciado de letras */
+}
+
+/* Estilo para los botones */
+.swal2-button-custom {
+    font-family: "Open Sans", sans-serif;
+    border-radius: 10px; /* Bordes redondeados */
+    letter-spacing: 3px; /* Espaciado de letras */
+}
+
+/* Estilo específico para el botón de cancelar */
+.swal2-button-custom-cancel {
+    font-family: "Open Sans", sans-serif;
+    border-radius: 10px; /* Bordes redondeados */
+    letter-spacing: 3px; /* Espaciado de letras */
+}
+
+/* Efecto borroso para los botones */
+.swal2-button-blur {
+    backdrop-filter: blur(5px); /* Efecto borroso en los botones */
+}
+
+/*Estilos para las tablas */
+.text-admin{
+    color: #27366e;
+    font-family: "Candal", "Open Sans";
+}
+
+.tabla-header th, .tabla-body td{
+
+    background-color:  #ffffffe4;
+    font-family: "Open Sans", sans-serif;
+}
+
+.tabla-users {
+    border-radius: 10px;
+    border: 1px solid #ffffffea;
+    letter-spacing: 3px;
+    background-color: #ffffffea;
+    backdrop-filter: blur(2px);
+    box-shadow: 15px 4px 15px #bababaea;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+#Tabla-libros{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: visible;
+}
+
+.data-dynamic-table-wrapper {
+    width: auto;
+}
+
+.table-responsive {
+    overflow-x: visible;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+#Tabla-revistas{
+    position: relative;
+    left: -80px !important;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: visible;
+}

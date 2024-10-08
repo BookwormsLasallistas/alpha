@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
+
+.all{
+    position: relative;
+    margin-top: 50px;
+    padding: 50px;
+    height:fit-content;
+    display: flex;
+}
+
+.edit-container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #27366e;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+.left-container{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-container{
+    margin: 20px;
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.header-container h1{
+    font-family: 'Candal','Open Sans';
+    font-size: 40px;
+    color: #27366e;
+}
+
+.form-container{
+    position: relative;
+    width: 80vh;
+    height: 68.2vh;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #27366e;
+    background-color: #fff;
+}
+
+.form-container form{
+    #Titulo{
+        position: absolute;
+        top: 0;
+        font-family: 'Candal','Open Sans';
+        font-size: 40px;
+        color: #27366e;
+    }
+    margin-top: 80px;
+    width: 100%;
+    background-color: #fff;
+    color: #27366e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+}
+
+.form-container input, .form-container select{
+    position: relative;
+    left: 0;
+    top: -30px;
+    font-family: 'Candal', 'Open Sans';
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.temp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.form-container button{
+    position: relative;
+    top: -30px;
+    width: 100%;
+    background-color: #e7b11f;
+    font-size: 12px;
+    font-family: 'Candal', 'Open Sans';
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;  
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #27366e;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+.right-container{
+    position: relative;
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.inside{
+    position: relative;
+    width: 90vh;
+    height: 90vh;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #27366e;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inside .title{
+    margin: 10px;
+    font-size: 40px;
+    font-family: 'Candal','Open Sans';
+    color: #27366e;
+}
+
+.resenas{
+    width: 80vh;
+    height: 75vh;
+    overflow: auto;
+}
+
+.item{
+    position: relative;
+    height: auto;
+    width: 77vh;
+    box-shadow: 4px 4px #27366e33;
+    border-radius: 10px;
+    border: 1px solid #27366e;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    z-index: 20;
+    overflow: hidden;
+    margin: 10px 0 10px 0;
+}
+
+.item h1{
+    font-size: 30px;
+    font-family: 'Candal','Open Sans';
+    color: #27366e;
+    margin: 0 0 10px 10px;
+}
+
+.item p{
+    font-size: 15px;
+    font-family:'Roboto';
+    color: black;
+    margin: 0 0 0 10px;
+}
+
+.item .imagen-item{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 142px;
+    width: 139px;
+    border-radius: 10px;
+    background-color: #e7b11f;
+    z-index: 15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    #imagen{
+        border-radius: 5px;
+    }
+}
+
+.item .decoration img{
+    position: relative;
+    left: -3px;
+    bottom: -2px;
+    width: 81vh;
+    height: 10vh;
+    z-index: 10;    
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+

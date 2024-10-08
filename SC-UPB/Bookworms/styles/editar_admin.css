@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.subtitle{
+    font-family: 'Open Sans', sans-serif;
+    color: #27366e;
+}
+
+.title{
+    margin: 5%;
+    font-family: 'Candal','Open Sans';
+    color: #fff;
+}
+
+.edit{
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: aquamarine;
+}
+
+.edit-container{
+    width: 90%;
+    display: flex;
+    background-color: #27366e;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+
+}
+.form-edit{
+    width: 50%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10%;
+}
+
+.books{
+    background-color: rgb(212, 0, 255);
+    width: 50%;
+    float: right;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+.container-form{
+    background-color: #fff;
+    border: 1px solid #27366e;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin: 20px;
+}
+
+.container-form input, .container-form textarea{
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    min-height: 10px;
+    outline: none;
+    background-color: #eee;
+}
+
+.container-form h1{
+    position: relative;
+    left: 0;
+    font-family: 'Candal', 'Open Sans';
+    font-size: 30px;
+    color: #27366e;
+}
+
+.container-form label, .container-form h6{
+    position: relative;
+    left: 0 !important;
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #27366e;
+}
+
+.container-form button{
+    background-color: #e7b11f;
+    font-family: 'Candal', 'Open Sans';
+    color: #27366e;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;  
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}

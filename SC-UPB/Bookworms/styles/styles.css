@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html{
+    min-height: 100%;
+    position: relative;
+}
+
+body{
+    margin: 0;
+    margin-bottom: 40px;
+    color: rgb(0, 0, 0);
+    overflow-x: hidden;
+}
+
+.bg {
+    background: url('http://localhost/SC-UPB/Bookworms/img/bg.png') repeat;
+    position: fixed;
+    width: 1762px;
+    height: 992px;
+    top:0;
+    left:0;
+    z-index: -1;
+  }
+  section {
+    color: #27366e;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    width: 500px;
+    margin: auto;
+    line-height: 1.4;
+    font-size: 14px;
+  }
+
+  .Navbar{
+    height: 60px;
+    background-color: transparent !important;
+    display: flex;
+    align-items: center;
+  }
+  .links-container{
+    padding-left: 10%;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .Navbar a{
+    height: 100%;
+    position: relative;
+    left: -20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #27366e;
+  }
+
+  .Dropdown a{
+    position: relative;
+    left: 0px;
+  }
+
+  .elementos{
+    position: relative;
+    display: flex;
+    width: 120%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .iconos{ 
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    display: inline-flex;
+    flex-direction: row !important;
+    right: 0px;
+    padding-top: 1vh;
+  }
+  .iconos a{ 
+    margin-left: 2%;
+  }
+  .iconos svg{
+    height: 70%;
+    width: 70%;
+    height: 100px; 
+  }
+
+  .Navbar a.principalPage{
+    width: 29%;
+    position: relative;
+    padding: 20px;
+    left: -20px;
+    margin-top: 1px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #27366e;
+  }
+
+  .Navbar .principalLogo{
+    height: 15vh;
+  }
+
+  .Navbar .home-link{
+    margin-right: auto;
+  }
+  .Navbar svg{
+    fill: #27366e;
+  }
+  .Navbar .principalLogo{
+    fill: #e7b11f;
+  }
+  #sidebar-active{
+    display: none;
+  }
+  .open-sidebar-button, .close-sidebar-button{
+    display: none;
+  }
+  /*------------------Portatiles------------------*/  
+  @media(max-width: 1024px){
+    .elementos{
+      width: 100%;
+      font-size: 11px;
+    }
+    .Navbar a.principalPage{
+      width: 34%;
+      font-size: 15px;
+    }
+    .iconos svg{ 
+      height: 10vh;
+    }
+    .Navbar .principalLogo{
+      height: 12vh;
+    }
+  }
+  /*------------------Tablets y Celulares------------------*/  
+
+  @media(max-width: 768px){
+    .Navbar{
+      background-color: transparent !important;
+    }
+    .links-container{
+      flex-direction: column;
+      align-items: flex-start;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      z-index: 10;
+      height: 150vh;
+      width: 300px;
+      border: 1px solid white;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 5px 0 5px 0 #27366e33;
+      transition: 0.75s ease-out;
+      overflow: hidden;
+      
+    }
+    .Navbar a{
+      position: relative;
+      top: -70px;
+      box-sizing: border-box;
+      font-size: 30px;
+      height: 100%;
+      width: 145%;
+      justify-content: flex-start;
+      color: #27366e;
+    }
+
+    .Navbar span{
+      position: relative;
+      padding-left: 0;
+      left: 0;
+      top:-10px;
+    }
+    .elementos{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .Navbar a.principalPage{
+      width: 100%;
+      height: fit-content;
+      position: relative;
+      padding: 0px;
+      margin-top: 1px;
+      top: -100px;
+      left: -10px;
+      font-size: 230%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #27366e;
+    }
+
+    .iconos{ 
+      position: relative;
+      flex-direction: row !important;
+      right: 0;
+      bottom: 0;
+      margin-top: 10px;
+    }
+
+    .iconos svg{ 
+      position: relative;
+      left: -20px;
+      fill: #27366e;
+      height: 100px ;
+    }
+    .Navbar .principalLogo{
+      fill: #e7b11f;
+      position: relative;
+      left: -75px !important;
+      height: 12vh ;
+    }
+  
+    .links-container .iconos{
+      display: none;
+    }
+    #sidebar-active:checked ~ .links-container .iconos{
+      display: inline-flex; 
+    }
+    .open-sidebar-button, .close-sidebar-button{
+      padding: 20px;
+      display: block;
+    }
+
+    .close-sidebar-button{
+      position: relative;
+      top: -2%;
+      right: -70%;
+    }
+    .close-sidebar-button svg{
+      fill: #e7b11f ;
+    }
+    #sidebar-active:checked ~ .links-container{
+      left: 0;
+    }
+    #sidebar-active:checked ~ body {
+      overflow: hidden; 
+    }
+    body.sidebar-open {
+      overflow: hidden;
+      position: fixed; 
+      width: 100%;
+    } 
+    #sidebar-active:checked ~ #overlay{
+      height: 110%;
+      width: 100%;
+      position: fixed;
+      top: -30px;
+      left: 0;
+      z-index: 9;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  @media(max-width: 450px){
+    .Navbar{
+      background-color: transparent !important;
+    }
+    .links-container{
+      flex-direction: column;
+      align-items: flex-start;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      z-index: 10;
+      height: 150vh;
+      width: 300px;
+      border: 1px solid white;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 5px 0 5px 0 #27366e33;
+      transition: 0.75s ease-out;
+      overflow: hidden;
+    }
+    .Navbar a{
+      box-sizing: border-box;
+      font-size: 27px;
+      height: 100%;
+      width: 110%;
+      justify-content: flex-start;
+      color: #27366e;
+    }
+
+    .Navbar span{
+      position: relative;
+      padding-left: 0;
+      left: 0;
+      top:-10px;
+    }
+    .elementos{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .Navbar a.principalPage{
+      width: 100%;
+      position: relative;
+      padding: 0px;
+      margin-top: 1px;
+      top: -100px;
+      left: 15px;
+      font-size: 200%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #27366e;
+    }
+
+    .iconos{ 
+      position: relative;
+      flex-direction: row !important;
+      right: 0;
+      bottom: 0;
+      margin-top: 10px;
+    }
+
+    .iconos svg{ 
+      position: relative;
+      left: 15px;
+      fill: #27366e;
+      height: 80px !important;
+    }
+    .Navbar .principalLogo{
+      fill: #e7b11f;
+      position: relative;
+      left: -40px !important;
+      height: 100px ;
+    }
+  
+    .links-container .iconos{
+      display: none;
+    }
+    #sidebar-active:checked ~ .links-container .iconos{
+      display: inline-flex; 
+    }
+    .open-sidebar-button, .close-sidebar-button{
+      padding: 20px;
+      display: block;
+    }
+
+    .close-sidebar-button{
+      position: relative;
+      top: -2%;
+      right: -70%;
+    }
+    .close-sidebar-button svg{
+      fill: #e7b11f ;
+    }
+    #sidebar-active:checked ~ .links-container{
+      left: 0;
+    }
+    #sidebar-active:checked ~ body {
+      overflow: hidden; 
+    }
+    body.sidebar-open {
+      overflow: hidden;
+      position: fixed; 
+      width: 100%;
+    } 
+    #sidebar-active:checked ~ #overlay{
+      height: 110%;
+      width: 100%;
+      position: fixed;
+      top: -30px;
+      left: 0;
+      z-index: 9;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+
+  /* ------------------------------------------------------------------------------------------------------------- */  
+
+  form{
+    width: 400px;
+    margin: 50px auto 50px;
+    background: transparent!important;
+    border: 1px solid transparent!important;
+    border-radius: 2px;
+    padding: 8px 16px
+  }
+  
+  fieldset{
+    border: none;
+  }
+  
+  label{
+    margin-top: 18px;
+  }
+  
+  input, textarea{
+    margin: 5px 0 0;
+    padding: 8px 8px;
+    border:1px solid #c0c0c0;
+    border-radius: 2px;
+    width: 90%
+  }
+  
+  input, label{
+    display: block;
+  }
+  /* ---------------------------------------------------------------------------------------------------------------- */
+
+
+.Navbar .elementos a {
+  position: relative; 
+  display: block;
+  padding: 5px;
+}
+
+.Navbar .elementos a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #e7b11f;
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+.Navbar .elementos a:hover::before {
+  transform: scaleX(1);
+}
+
+
+.Navbar[data-animation="subrayar"] .elementos a::before {
+  transform-origin: right;
+}
+
+.Navbar[data-animation="subrayar"] .elementos a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
